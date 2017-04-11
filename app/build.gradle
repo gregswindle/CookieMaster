@@ -1,0 +1,75 @@
+
+apply plugin: 'project-report'
+apply plugin: 'jacoco'
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        minSdkVersion 23
+        targetSdkVersion 25
+        versionCode 1
+        versionName "0.1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+android {
+    lintOptions {
+        abortOnError false
+    }
+}
+
+version '0.1.0-SNAPSHOT'
+
+
+repositories { jcenter(); mavenCentral(); mavenLocal() }
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+//    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+//        exclude group: 'com.android.support', module: 'support-annotations'
+//    })
+    // Android dependencies
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile 'org.webkit:android-jsc:r174650'
+    // signature 'org.codehaus.mojo.signature:java16:1.1@signature'
+    // Compile-time-only dependencies
+    provided 'com.google.code.findbugs:jsr305:3.0.1'
+    provided 'com.google.code.findbugs:annotations:3.0.1'
+    provided 'ru.vyarus:gradle-quality-plugin:2.1.0'
+    provided 'ru.vyarus:gradle-animalsniffer-plugin:1.2.0'
+    provided 'ru.vyarus:gradle-github-info-plugin:1.1.0'
+    provided 'ru.vyarus:gradle-java-lib-plugin:1.0.4'
+    provided 'com.github.ben-manes:gradle-versions-plugin:0.11.1'
+    provided 'net.researchgate:gradle-release:2.4.0'
+    // Logging
+    compile 'org.slf4j:slf4j-api:1.7.21'
+    // Jackson JSON libraries
+    compile 'com.fasterxml.jackson.core:jackson-core:2.8.8'
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.8.8'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.8.8'
+    // Test dependencies
+    testCompile 'ch.qos.logback:logback-classic:1.1.7'
+    testCompile 'org.slf4j:jul-to-slf4j:1.7.21'
+    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+    //testCompile 'junit:junit:4.12'
+    testCompile 'org.kt3k.gradle.plugin:coveralls-gradle-plugin:2.8.1'
+    testCompile 'org.mockito:mockito-core:2.7.22'
+    testCompile 'org.robolectric:android-all:7.1.0_r7-robolectric-0'
+}
+
+group = 'com.verizon.api'
+description = 'Native Android extraction from com.cordova.plugins.cookiemaster.CookieMaster for reuse in native Android as well as Cordova.'
+
+
