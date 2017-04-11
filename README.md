@@ -1,11 +1,11 @@
-# `cookiemaster-android`
+# `CookieMaster`
 
 > Native Android extraction from `com.cordova.plugins.cookiemaster.CookieMaster` for reuse in native Android as well as Cordova.
 
 [![License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://www.opensource.org/licenses/MIT)
-[![Build Status](http://img.shields.io/travis/gregswindle/cookiemaster-android.svg?style=flat&branch=master)](https://travis-ci.org/gregswindle/cookiemaster-android)
-[![Coverage Status](https://img.shields.io/coveralls/gregswindle/cookiemaster-android.svg?style=flat)](https://coveralls.io/r/gregswindle/cookiemaster-android?branch=master)
-[![Greenkeeper badge](https://badges.greenkeeper.io/gregswindle/cookiemaster-android.svg)](https://greenkeeper.io/)
+[![Build Status](http://img.shields.io/travis/gregswindle/CookieMaster.svg?style=flat&branch=master)](https://travis-ci.org/gregswindle/CookieMaster)
+[![Coverage Status](https://img.shields.io/coveralls/gregswindle/CookieMaster.svg?style=flat)](https://coveralls.io/r/gregswindle/CookieMaster?branch=master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/gregswindle/CookieMaster.svg)](https://greenkeeper.io/)
 
 ---
 <!-- TOC depthFrom:2 depthTo:4 withLinks:1 updateOnSave:1 orderedList:0 -->
@@ -77,11 +77,11 @@ CookieMaster.clear();
 
 ## 2. Setup
 
-Releases ~~are~~ _will be_ published to [bintray jcenter](https://bintray.com/gregswindle/cookiemaster-android/cookiemaster-android/) and
-[maven central](https://maven-badges.herokuapp.com/maven-central/com.verizon.api/cookiemaster-android).
+Releases ~~are~~ _will be_ published to [bintray jcenter](https://bintray.com/gregswindle/CookieMaster/CookieMaster/) and
+[maven central](https://maven-badges.herokuapp.com/maven-central/com.verizon.api/CookieMaster).
 
-[![JCenter](https://img.shields.io/bintray/v/gregswindle/cookiemaster-android/cookiemaster-android.svg?label=jcenter)](https://bintray.com/gregswindle/cookiemaster-android/cookiemaster-android/_latestVersion)
-[![Maven Central](https://img.shields.io/maven-central/v/com.verizon.api/cookiemaster-android.svg?style=flat)](https://maven-badges.herokuapp.com/maven-central/com.verizon.api/cookiemaster-android)
+[![JCenter](https://img.shields.io/bintray/v/gregswindle/CookieMaster/CookieMaster.svg?label=jcenter)](https://bintray.com/gregswindle/CookieMaster/CookieMaster/_latestVersion)
+[![Maven Central](https://img.shields.io/maven-central/v/com.verizon.api/CookieMaster.svg?style=flat)](https://maven-badges.herokuapp.com/maven-central/com.verizon.api/CookieMaster)
 
 
 ### 2.1. Maven
@@ -89,24 +89,24 @@ Releases ~~are~~ _will be_ published to [bintray jcenter](https://bintray.com/gr
 ```xml
 <dependency>
   <groupId>com.verizon.api</groupId>
-  <artifactId>cookiemaster-android</artifactId>
+  <artifactId>CookieMaster</artifactId>
   <version>0.1.0</version>
 </dependency>
 ```
 
 ### 2.2. Gradle
 
-Add `com.verizon.api:cookiemaster-android` to your `build.gradle`'s `dependencies`:
+Add `com.verizon.api:CookieMaster` to your `build.gradle`'s `dependencies`:
 
 ```gradle
-compile 'com.verizon.api:cookiemaster-android:0.1.0'
+compile 'com.verizon.api:CookieMaster:0.1.0'
 ```
 
 ## 3. Snapshots
 
 You can use snapshot versions through [JitPack](https://jitpack.io).
 
-3.1. Go to [JitPack project page](https://jitpack.io/#gregswindle/cookiemaster-android).
+3.1. Go to [JitPack project page](https://jitpack.io/#gregswindle/CookieMaster).
 
 3.2. Select `Commits` section and click `Get it` on commit you want to use (top one - the most recent).
 
